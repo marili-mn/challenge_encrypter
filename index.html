@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./assets/Logo.svg" alt="Logo">
+        </nav>
+    </header>
+    <main>
+        <section class="input-section contenedor">
+            <div class="container">
+                <div class="header">
+                    <label for="text-input" class="sr-only">Ingrese texto</label>
+                    <textarea id="text-input" rows="10" placeholder="Ingrese solo letras minúsculas y sin acentos"></textarea>
+                </div>
+                <div class="below">
+                    <p class="info">
+                        <i class="bx bxs-info-circle"></i> Solo letras minúsculas y sin acentos
+                    </p>
+                    <div class="buttons">
+                        <button id="encrypt-button">Encriptar</button>
+                        <button id="decrypt-button">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="text-container">
+                    <img src="./assets/Muneco.svg" alt="Muneco" style="pointer-events: none">
+                    <p class="message" id="output-message">Ningún mensaje fue encontrado</p>
+                    <p class="advice-info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button id="copy-button">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
